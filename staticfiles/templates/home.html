@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+<div class="row my-5">
+      <div class="col-12 d-flex  justify-content-center align-items-center">
+         <div class="circular-image-container">
+            <img  class="circular-image" src=" {% static 'images/me.jpg' %} " alt="Image" >
+         </div>
+      </div>
+
+      <div class="col-12 text-center mt-4">
+         <h4  class="title">Hi, I am </h4>
+            <div class="name">
+            <h1>Komal Verma</h1>
+            <h1>I am a B.Tech 1st Year student</h1>
+            </div>
+      </div>
+
+      <div class="col-12 text-center mt-4">
+         <div  class="col-12 d-flex  justify-content-center align-items-center">
+           <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank" class="ms-3">
+           <img src="{% static 'images/linkedin.png' %}" alt="images/linkedin.png" width="50" height="50" class="social-link">
+           </a> 
+
+           <a href="https://www.instagram.com/accounts/emailsignup/" target="_blank" class="ms-3">
+           <img src="{% static 'images/insta.jpg' %}" alt="images/insta.jpg" width="50" height="50" class="social-link">
+           </a>
+           
+           <a href="https://github.com/" target="_blank" class="ms-3">
+           <img src="{% static 'images/github.png' %}" alt="images/github.jpg" width="50" height="50" class="social-link">
+           </a>
+         </div>
+      </div>
+</div>
+
+{% endblock content1 %}
